@@ -1,0 +1,62 @@
+#title: What are the compounds found in Gentianaceae (Q157216) or children taxa?
+SELECT DISTINCT ?structure ?structureLabel ?structure_inchi WHERE {
+  VALUES ?taxon {
+    wd:Q157216
+  }
+  ?children (wdt:P171*) ?taxon. hint:Prior hint:rangeSafe true.
+  ?structure p:P703 ?statement. hint:Prior hint:rangeSafe true.
+  ?statement ps:P703 ?children. hint:Prior hint:rangeSafe true.
+  ?structure p:P234 []. hint:Prior hint:rangeSafe true.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+LIMIT 10000
+
+#title: How many articles report compounds compounds found in Gentianaceae (Q157216) or children taxa?
+SELECT (COUNT(DISTINCT ?article) AS ?count) WHERE {
+  VALUES ?taxon {
+    wd:Q157216
+  }
+  ?children (wdt:P171*) ?taxon. hint:Prior hint:rangeSafe true.
+  ?structure p:P703 ?statement. hint:Prior hint:rangeSafe true.
+  ?statement ps:P703 ?children. hint:Prior hint:rangeSafe true.
+  ?structure p:P234 []. hint:Prior hint:rangeSafe true.
+  ?statement prov:wasDerivedFrom/pr:P248 ?article. hint:Prior hint:rangeSafe true.
+}
+
+#title: How many articles reporting compounds compounds found in Gentianaceae (Q157216) or children taxa are open access?
+SELECT (COUNT(DISTINCT ?article) AS ?count) WHERE {
+  VALUES ?taxon {
+    wd:Q157216
+  }
+  ?children (wdt:P171*) ?taxon. hint:Prior hint:rangeSafe true.
+  ?structure p:P703 ?statement. hint:Prior hint:rangeSafe true.
+  ?statement ps:P703 ?children. hint:Prior hint:rangeSafe true.
+  ?structure p:P234 []. hint:Prior hint:rangeSafe true.
+  ?statement prov:wasDerivedFrom/pr:P248 ?article. hint:Prior hint:rangeSafe true.
+  ?article wdt:P953 ?full_work. hint:Prior hint:rangeSafe true.
+}
+
+#defaultView:Map
+PREFIX target: <http://www.wikidata.org/entity/Q112143478>
+SELECT ?organization ?organizationLabel ?geo ?count ?layer
+WITH {
+  SELECT DISTINCT ?organization ?geo (COUNT(DISTINCT ?citing_work) AS ?count)
+  WHERE {
+    ?citing_work wdt:P2860 target: .
+    ?citing_work wdt:P50 ?author .
+    ?author ( wdt:P108 | wdt:P463 | wdt:P1416 ) / wdt:P361* ?organization . 
+    ?organization (wdt:P625 | ((wdt:P276|wdt:P159)/wdt:P625)) ?geo .
+  }
+  GROUP BY ?organization ?geo ?count
+  LIMIT 1000
+} AS %orgs
+WHERE {
+  INCLUDE %orgs
+  BIND(
+    IF((?count < 1), "No results", 
+      IF((?count < 2), "1 result", 
+         IF((?count < 11), "1 < results ≤ 10", "over 10 results"))
+      ) AS ?layer )
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }        
+ }
+ORDER BY DESC (?count)
