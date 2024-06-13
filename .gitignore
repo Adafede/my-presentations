@@ -2,5 +2,5 @@
 .bundle
 Gemfile.lock
 .DS_Store
-.key
-.pages
+*.key
+*.pages
