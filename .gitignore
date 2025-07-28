@@ -1,7 +1,12 @@
-# ignore Bundler / JRuby files
-.bundle
-Gemfile.lock
+_site/
+
+.quarto/
+
 .DS_Store
+
 *.key
 *.pages
+
 /20220930_thesis-defense
+
+/.quarto/
