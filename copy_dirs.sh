@@ -1,5 +1,12 @@
 #!/bin/bash
+set -euo pipefail
+
+# Make sure _site exists
+mkdir -p _site
 
 for d in */; do
-  [ "$d" != "_site/" ] && cp -r "$d" "_site/$d"
+  if [ "$d" != "_site/" ]; then
+    echo "Copying $d to _site/$d"
+    cp -r "$d" "_site/$d"
+  fi
 done
