@@ -4,9 +4,9 @@ project:
     - "*.qmd"
 
 website:
-  title: "My Presentations"
-  description: "My Presentations"
-  site-path: "./"
+  title: My Presentations
+  description: My Presentations
+  site-path: ./
   site-url: https://adafede.github.io/my-presentations
   repo-url: https://github.com/adafede/my-presentations
   search:
@@ -20,6 +20,7 @@ format:
   html:
     grid:
       body-width: 1200px
+    link-external-newwindow: true
     theme:
       light: flatly
       dark: darkly
