@@ -45,7 +45,6 @@ jobs:
 
       - name: Build site
         run: |
-          set -x
           uv run quarto render
           bash copy_dirs.sh
 
