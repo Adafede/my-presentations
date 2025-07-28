@@ -46,7 +46,9 @@ jobs:
       - name: Build site
         run: |
           uv run quarto render
-          bash copy_dirs.sh
+          for d in */; do
+            [ "$d" != "_site/" ] && cp -r "$d" "_site/$d"
+          done
 
       - name: Deploy to GitHub pages 🚀
         if: github.event_name != 'pull_request'
