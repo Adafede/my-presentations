@@ -4479,7 +4479,7 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="VGFsaw==" data-listing-date-sort="1717113600000" data-listing-file-modified-sort="1753697516445" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="0" data-categories="VGFsaw==" data-listing-date-sort="1717113600000" data-listing-file-modified-sort="1753719575766" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="thumbnail"><a href="./2024-05-31_SCNAT.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -4515,7 +4515,7 @@ Bern, Switzerland
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="VGFsayUyQ1dvcmtzaG9w" data-listing-date-sort="1713312000000" data-listing-file-modified-sort="1753697516445" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="1" data-categories="VGFsayUyQ1dvcmtzaG9w" data-listing-date-sort="1713312000000" data-listing-file-modified-sort="1753719575766" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="thumbnail"><a href="./2024-04-17_PRAGUE.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -4555,7 +4555,7 @@ Prague, Czech Republic
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="VGFsaw==" data-listing-date-sort="1697414400000" data-listing-file-modified-sort="1753697516339" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="2" data-categories="VGFsaw==" data-listing-date-sort="1697414400000" data-listing-file-modified-sort="1753719575656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="thumbnail"><a href="./2023-10-16_INNSBRUCK.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -4591,7 +4591,7 @@ Innsbruck, Austria
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="VGFsaw==" data-listing-date-sort="1676160000000" data-listing-file-modified-sort="1753697516339" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="quarto-post image-right" data-index="3" data-categories="VGFsaw==" data-listing-date-sort="1676160000000" data-listing-file-modified-sort="1753719575656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <div class="thumbnail"><a href="./2023-02-02_JENA.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -4740,6 +4740,11 @@ Jena, Germany
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
