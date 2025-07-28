@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a448c1f0b47399417e1aefd445574041 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a448c1f0b47399417e1aefd445574041" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a448c1f0b47399417e1aefd445574041 = L.map(
+                "map_a448c1f0b47399417e1aefd445574041",
+                {
+                    center: [48.807385225, 11.2135332],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0061045aaf4e403be2e7c29f96d8541d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0061045aaf4e403be2e7c29f96d8541d.addTo(map_a448c1f0b47399417e1aefd445574041);
+        
+    
+            var marker_680d5e21404bb43eda3aac553f0e93bf = L.marker(
+                [47.2654296, 11.3927685],
+                {
+}
+            ).addTo(map_a448c1f0b47399417e1aefd445574041);
+        
+    
+        var popup_7b479f9f9e8e43806902892787220967 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9942ac786d39462b962733efa829ecc = $(`<div id="html_a9942ac786d39462b962733efa829ecc" style="width: 100.0%; height: 100.0%;"><b>Lotus: A Living Knowledge Base for Modern Pharmacognosy</b><br>Venue: Neue Forschungsergebnisse Pharmakognosie<br>Date: 2023-10-16<br><p>Talk given in the frame of the Neue Forschungsergebnisse Pharmakognosie.</p></div>`)[0];
+                popup_7b479f9f9e8e43806902892787220967.setContent(html_a9942ac786d39462b962733efa829ecc);
+            
+        
+
+        marker_680d5e21404bb43eda3aac553f0e93bf.bindPopup(popup_7b479f9f9e8e43806902892787220967)
+        ;
+
+        
+    
+    
+            var marker_641c00ac1debeaa508d0dcdb94b547c7 = L.marker(
+                [46.9484742, 7.4521749],
+                {
+}
+            ).addTo(map_a448c1f0b47399417e1aefd445574041);
+        
+    
+        var popup_f67341169e2cb973e40fe164bd53482b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bda472d9fcd6115135aa1c8f0ce034a1 = $(`<div id="html_bda472d9fcd6115135aa1c8f0ce034a1" style="width: 100.0%; height: 100.0%;"><b>Where is the “L” in “ORD”?</b><br>Venue: Swiss Academy of Sciences (SCNAT) symposium "Open Research Data – are we on track?"<br>Date: 2024-05-31<br><p>Talk given in the frame of the Swiss Academy of Sciences (SCNAT) symposium "Open Research Data – are we on track?". <a href="https://adafede.github.io/my-presentations/20240531_bern/20240531_bern.pdf">Available here</a>.</p></div>`)[0];
+                popup_f67341169e2cb973e40fe164bd53482b.setContent(html_bda472d9fcd6115135aa1c8f0ce034a1);
+            
+        
+
+        marker_641c00ac1debeaa508d0dcdb94b547c7.bindPopup(popup_f67341169e2cb973e40fe164bd53482b)
+        ;
+
+        
+    
+    
+            var marker_4ced21628d1c84858ca0d5f65166b843 = L.marker(
+                [50.0874654, 14.4212535],
+                {
+}
+            ).addTo(map_a448c1f0b47399417e1aefd445574041);
+        
+    
+        var popup_2195b413cb30da46be54330cf0139700 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0acca8bfdd6b0a3728f131211d48e83d = $(`<div id="html_0acca8bfdd6b0a3728f131211d48e83d" style="width: 100.0%; height: 100.0%;"><b>Introduction to Linked Open Data for Computational Mass Spectrometry</b><br>Venue: Prague Computational Mass Spectrometry Workshop<br>Date: 2024-04-17<br><p>Talk given in the frame of the Prague Computational Mass Spectrometry Workshop. <a href="https://adafede.github.io/my-presentations/20240417_prague/20240417_prague.pdf">Available here</a> <a href="https://adafede.github.io/my-presentations/20240417_prague/20240417_prague_hands_on.pdf">and here</a>.</p></div>`)[0];
+                popup_2195b413cb30da46be54330cf0139700.setContent(html_0acca8bfdd6b0a3728f131211d48e83d);
+            
+        
+
+        marker_4ced21628d1c84858ca0d5f65166b843.bindPopup(popup_2195b413cb30da46be54330cf0139700)
+        ;
+
+        
+    
+    
+            var marker_35c98d2260c365e1f1e36e2e64057f3d = L.marker(
+                [50.9281717, 11.5879359],
+                {
+}
+            ).addTo(map_a448c1f0b47399417e1aefd445574041);
+        
+    
+        var popup_7ab91f31c4fa53629798fa41c44467f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a88c09559d498f18dcbc47eae95f525b = $(`<div id="html_a88c09559d498f18dcbc47eae95f525b" style="width: 100.0%; height: 100.0%;"><b>Prior Knowledge as a Compass Guiding Untargeted Metabolomics</b><br>Venue: Jena Centre for Bioinformatics<br>Date: 2023-02-12<br><p><a href="http://www.jcb-jena.de/2023/01/seminar-02-february-2023-dr-adriano-rutz/#more-2487">http://www.jcb-jena.de/2023/01/seminar-02-february-2023-dr-adriano-rutz/#more-2487</a>. <a href="https://adafede.github.io/my-presentations/20230202_jena/20230202_jena.pdf">Available here</a>.</p></div>`)[0];
+                popup_7ab91f31c4fa53629798fa41c44467f2.setContent(html_a88c09559d498f18dcbc47eae95f525b);
+            
+        
+
+        marker_35c98d2260c365e1f1e36e2e64057f3d.bindPopup(popup_7ab91f31c4fa53629798fa41c44467f2)
+        ;
+
+        
+    
+</script>
+</html>
