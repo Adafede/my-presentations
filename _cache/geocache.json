@@ -53,5 +53,10 @@
     "latitude": 47.3289241,
     "longitude": 11.1867187,
     "address": "Seefeld in Tirol, Bezirk Innsbruck-Land, Tirol, 6100, \u00d6sterreich"
+  },
+  "Wageningen, the Netherlands": {
+    "latitude": 51.9663016,
+    "longitude": 5.6662814,
+    "address": "Wageningen, Gelderland, Nederland"
   }
 }
