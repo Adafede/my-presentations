@@ -11,6 +11,6 @@
     "href": "index.html#presentation-locations-map",
     "title": "Presentations",
     "section": "🌍 Presentation Locations Map",
-    "text": "🌍 Presentation Locations Map"
+    "text": "🌍 Presentation Locations Map\n\n\nWARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError(\"HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)\")': /search?q=Wageningen%2C+the+Netherlands&format=json&limit=1"
   }
 ]
