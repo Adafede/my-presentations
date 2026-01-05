@@ -10,3 +10,5 @@ _site/
 /20220930_thesis-defense
 
 /.quarto/
+
+**/*.quarto_ipynb
