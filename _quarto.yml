@@ -12,6 +12,11 @@ website:
   repo-url: https://github.com/adafede/my-presentations
   search:
     location: navbar
+  navbar:
+    right:
+      - text: "![](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/icon/svg/codeberg-logo_icon_white.svg)"
+        aria-label: Codeberg
+        href: https://codeberg.org/adafede/pages/my-presentations
   open-graph:
     locale: en
     site-name: https://adafede.github.io/my-presentations
@@ -22,9 +27,6 @@ format:
     grid:
       body-width: 1200px
     link-external-newwindow: true
-    # theme:
-    #   light: flatly
-    #   dark: darkly
     respect-user-color-scheme: true
     smooth-scroll: true
 
