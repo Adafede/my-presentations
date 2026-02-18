@@ -20,7 +20,6 @@ website:
   open-graph:
     locale: en
     site-name: https://adafede.github.io/my-presentations
-  navbar: true
 
 format:
   html:
