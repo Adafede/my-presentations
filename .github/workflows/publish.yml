@@ -38,7 +38,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v6
-      - uses: astral-sh/setup-uv@v8.0.0
+      - uses: astral-sh/setup-uv@v8.1.0
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
           tinytex: true
