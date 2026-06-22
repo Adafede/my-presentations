@@ -1,0 +1,32 @@
+---
+title: "Open Tools, Broad Knowledge: Empowering Researchers for Contextualized Metabolite Annotation"
+venue: Massa 2026
+date: 2026-06-22
+location: Chieti, Italy
+categories:
+  - Talk
+author:
+  - name:
+      given: Adriano
+      family: Rutz
+    orcid: 0000-0003-0443-9902
+    number: 1
+    affiliations:
+      - ref: ethz
+affiliations:
+  - id: ethz
+    number: 1
+    name: ETH Zürich
+    department: Institute for Molecular Systems Biology
+    group: Zamboni
+    address: Otto-Stern-Weg, 3
+    city: Zürich
+    country: Switzerland
+    postal-code: 8093
+    ror: https://ror.org/03j5gm982
+description: >
+  Invited keynote lecture given in the frame of the “[Massa 2026](https://www.spettrometriadimassa.org/conference-2026-MASSA_2026)” conference organized by [Italian Chemical Society](https://www.societachimica.it/).
+  My first talk in Italian!
+
+  Available [here](https://adafede.github.io/my-presentations/20260622_chieti/20260622_massa_chieti.pdf).
+---
