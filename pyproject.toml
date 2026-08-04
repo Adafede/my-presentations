@@ -4,8 +4,8 @@ version = "0.0.1"
 description = "My presentations"
 requires-python = ">=3.13,<4"
 dependencies = [
-  "folium>=0.20.0,<1",
-  "geopy>=2.5.0,<3",
-  "markdown>=3.10.2,<4",
-  "quarto>=0.1.0,<1",
+  "folium>=0.20.0",
+  "geopy>=2.5.0",
+  "markdown>=3.10.3",
+  "quarto>=0.1.0",
 ]
