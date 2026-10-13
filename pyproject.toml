@@ -6,6 +6,6 @@ requires-python = ">=3.13,<4"
 dependencies = [
   "folium>=0.20.0",
   "geopy>=2.5.0",
-  "markdown>=3.10.3",
+  "markdown>=3.11",
   "quarto>=0.1.0",
 ]
