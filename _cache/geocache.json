@@ -14,6 +14,11 @@
     "longitude": 7.4521749,
     "address": "Bern, Verwaltungskreis Bern-Mittelland, Verwaltungsregion Bern-Mittelland, Bern/Berne, Schweiz/Suisse/Svizzera/Svizra"
   },
+  "Chieti, Italy": {
+    "latitude": 42.1026928,
+    "longitude": 14.4159053,
+    "address": "Chieti, Abruzzo, Italia"
+  },
   "Prague, Czech Republic\"": {
     "latitude": 50.0874654,
     "longitude": 14.4212535,
@@ -44,6 +49,11 @@
     "longitude": 11.5879359,
     "address": "Jena, Th\u00fcringen, Deutschland"
   },
+  "Leuven, Belgium": {
+    "latitude": 50.879202,
+    "longitude": 4.7011675,
+    "address": "Leuven, Vlaams-Brabant, Vlaanderen, Belgi\u00eb / Belgique / Belgien"
+  },
   "Napoli, Italy": {
     "latitude": 40.8358846,
     "longitude": 14.2487679,
@@ -58,10 +68,5 @@
     "latitude": 51.9685817,
     "longitude": 5.6682981,
     "address": "Wageningen, Gelderland, Nederland"
-  },
-  "Leuven, Belgium": {
-    "latitude": 50.879202,
-    "longitude": 4.7011675,
-    "address": "Leuven, Vlaams-Brabant, Vlaanderen, Belgi\u00eb / Belgique / Belgien"
   }
 }
