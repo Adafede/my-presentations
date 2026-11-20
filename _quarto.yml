@@ -1,6 +1,8 @@
 ---
 project:
   type: website
+  post-render:
+    - postrender.py
   render:
     - "*.qmd"
 
@@ -17,9 +19,6 @@ website:
       - text: "![](https://codeberg.org/Codeberg/Design/raw/branch/main/logo/icon/svg/codeberg-logo_icon_white.svg)"
         aria-label: Codeberg
         href: https://codeberg.org/adafede/pages/my-presentations
-  body-header: |
-    <!-- 100% privacy-first analytics -->
-    <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
   page-footer: |
     <div style="display: flex; justify-content: center;">
     <a href="https://www.simpleanalytics.com?utm_source=adafede.github.io&utm_content=badge" referrerpolicy="origin" target="_blank" rel="noopener noreferrer">
